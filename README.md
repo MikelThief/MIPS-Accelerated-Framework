@@ -3,7 +3,7 @@
 ### Usage
 MIPS AF is easy to set up for any project with only 2 additional include statements.
 ```assembly
-.include "MAC.asm"
+.include "MAF.asm"
 .data
     # Your data section
 .text
