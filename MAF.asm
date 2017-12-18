@@ -3,7 +3,7 @@
 #            MIPS            #
 #    Accelerated Framework   #
 #                            #
-#        Michał Bator        #
+#        MichaĹ‚ Bator        #
 #    ECOAR Winter sem 2017   #
 ##############################
 .data
@@ -515,6 +515,9 @@
     #   %code = print code for associated data-type
     #################################
     .macro println_reg(%reg, %code)
+        	.data
+    	new_line: .asciiz "\n"
+    	.text
         addi $sp, $sp, -8
         sw $a0, ($sp)
         sw $v0, 4($sp)
